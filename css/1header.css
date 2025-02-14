@@ -1,0 +1,28 @@
+.siteHeader {
+  z-index: 30;
+  left: 60px;
+  right: 60px;
+  display: inline-block;
+  grid-column: 1/-1;
+  /* background-color: black; */
+}
+
+.logo {
+  max-width: 400px;
+  place-self: center;
+  padding: 60px 4px 0px 0;
+}
+
+@media (max-width: 600px) {
+  .siteHeader .logo {
+    max-width: 280px;
+    padding: 28px 4px 0px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .siteHeader .logo {
+    max-width: 280px;
+    padding: 40px 4px 20px 0;
+  }
+}

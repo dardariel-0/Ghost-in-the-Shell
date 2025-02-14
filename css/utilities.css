@@ -1,0 +1,22 @@
+:root {
+  --b01: #000;
+  --w01: #fff;
+  --darkgrey: hsla(0deg 0% 100% / 10%);
+}
+
+.font-1 {
+  font: 400 1rem "Barlow", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.font-2 {
+  font: 600 1rem "Barlow", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.font-p {
+  font: 300 1rem/1.35 "Barlow", sans-serif;
+  letter-spacing: 0px;
+}

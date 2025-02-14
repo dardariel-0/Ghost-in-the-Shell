@@ -1,0 +1,94 @@
+/* MUDAR IDIOMA */
+
+.lang {
+  position: fixed;
+  z-index: 1000;
+  right: 60px;
+  top: 80px;
+  font-size: 0.8rem;
+}
+
+.select-button {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.select-button::after {
+  content: "ᐁ";
+  display: inline-block;
+  font-size: 0.6rem;
+  margin-left: 4px;
+  transition: 0.3s ease-out;
+}
+
+.select-button.ativo::after {
+  rotate: 180deg;
+  margin-top: -6px;
+}
+
+.opcoes-lang {
+  scrollbar-width: none;
+  display: none !important;
+  width: 100%;
+}
+
+.opcoes-lang li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  filter: opacity(0.6);
+}
+
+.opcoes-lang li:hover {
+  filter: opacity(1);
+}
+
+.opcoes-lang li label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.opcoes-lang input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+/* interactivity */
+
+.lang.active .opcoes-lang {
+  display: block !important;
+  transform: scaleY(1);
+  z-index: 1;
+}
+
+.siteHeader .lang {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .lang {
+    right: 26px;
+    top: 46px;
+  }
+}
+
+@media (max-width: 500px) {
+  .lang {
+    display: none;
+  }
+
+  .siteHeader .lang {
+    display: block;
+    position: initial;
+    justify-self: end;
+  }
+  .select-button {
+    margin-bottom: 3px;
+  }
+}
