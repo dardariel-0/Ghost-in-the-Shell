@@ -48,11 +48,11 @@ body {
 
 @media (max-width: 490px) {
   #Background canvas {
-    /* display: none; */
+    display: none;
   }
 
   #Background .bg-500 {
-    /* display: block; */
+    display: block;
     z-index: 100;
   }
 

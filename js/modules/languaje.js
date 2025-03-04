@@ -1,8 +1,9 @@
 export default function initLanguaje() {
-  const langEN = document.getElementById("en-us");
-  const langPT = document.getElementById("pt-br");
-  const langJA = document.getElementById("ja-jp");
+  const langEN = document.querySelector(".en-us");
+  const langPT = document.querySelector(".pt-br");
+  const langJA = document.querySelector(".ja-jp");
   const paragrafos = document.querySelectorAll(".jsText");
+  const botoesLang = document.querySelectorAll(".opcoes-lang li");
   ///////////////////
 
   function mudarEN() {
@@ -17,6 +18,11 @@ export default function initLanguaje() {
 
     paragrafos[3].innerHTML =
       "Project developed for study purposes and not commercial.";
+
+    langEN.classList.add("ativo");
+    langJA.classList.remove("ativo");
+
+    langPT.classList.remove("ativo");
   }
   langEN.addEventListener("click", mudarEN);
 
@@ -34,6 +40,10 @@ export default function initLanguaje() {
 
     paragrafos[3].innerHTML =
       "Projeto desenvolvido para fins de estudo e não comerciais.";
+
+    langPT.classList.add("ativo");
+    langEN.classList.remove("ativo");
+    langJA.classList.remove("ativo");
   }
   langPT.addEventListener("click", mudarPT);
 
@@ -51,6 +61,10 @@ export default function initLanguaje() {
 
     paragrafos[3].innerHTML =
       "このプロジェクトは、研究目的で開発されたものであり、商業目的ではありません。";
+
+    langJA.classList.add("ativo");
+    langEN.classList.remove("ativo");
+    langPT.classList.remove("ativo");
   }
   langJA.addEventListener("click", mudarJA);
 

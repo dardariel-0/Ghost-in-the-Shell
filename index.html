@@ -62,28 +62,11 @@
     </ul>
   </div>
 
-  <div class="lang">
-    <div class="select-button" aria-expanded="false" aria-controls="opcoes-lang">
-      <span class="selected-value ativo">EN US</span>
+  <div class="lang" data-modal="abrir">
+    <div class="select-button">
+      <img src="/img/globe-icon.svg" alt="">
+      <span class="selected-value">EN US</span>
     </div>
-
-    <ul class="opcoes-lang" id="opcoes-lang">
-      <li>
-        <input type="radio" id="en-us" name="languaje">
-        <label for="en-us">EN US</label>
-      </li>
-      <li>
-        <input type="radio" id="pt-br" name="languaje">
-        <label for="pt-br"> PT BR</label>
-      </li>
-      <li>
-        <input type="radio" id="ja-jp" name="languaje">
-        <label for="ja-jp">JA JP</label>
-      </li>
-
-    </ul>
-
-
   </div>
 
   <div id="PageWrapper" data-scroll="area">
@@ -94,29 +77,6 @@
         <div class="logo">
           <img src="/img/logo.png" alt="GITS Logo">
 
-          <div class="lang">
-            <div class="select-button" aria-expanded="false" aria-controls="opcoes-lang">
-              <span class="selected-value ativo">EN US</span>
-            </div>
-
-            <ul class="opcoes-lang" id="opcoes-lang">
-              <li>
-                <input type="radio" id="en-us" name="languaje">
-                <label for="en-us">EN US</label>
-              </li>
-              <li>
-                <input type="radio" id="pt-br" name="languaje">
-                <label for="pt-br"> PT BR</label>
-              </li>
-              <li>
-                <input type="radio" id="ja-jp" name="languaje">
-                <label for="ja-jp">JA JP</label>
-              </li>
-
-            </ul>
-
-
-          </div>
         </div>
 
 
@@ -176,6 +136,33 @@
 
     </div>
   </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+
+      <div class="globo">
+        <span>languaje...</span>
+        <picture><img src="/img/GLOBE.gif" alt=""></picture>
+      </div>
+      <ul class="opcoes-lang" id="opcoes-lang">
+        <li>
+          <input type="radio" id="en-us" name="languaje">
+          <label class="en-us ativo" for="en-us">EN US</label>
+        </li>
+        <li>
+          <input type="radio" id="pt-br" name="languaje">
+          <label class="pt-br" for="pt-br"> PT BR</label>
+        </li>
+        <li>
+          <input type="radio" id="ja-jp" name="languaje">
+          <label class="ja-jp" for="ja-jp">JA JP</label>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
 
   <script type="module" src="/js/script.js"></script>
 </body>
