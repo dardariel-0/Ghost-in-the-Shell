@@ -160,40 +160,6 @@
 
 @media (max-width: 660px) {
   .lang {
-    right: 60px;
-    top: 76px;
-  }
-
-  .select-button span {
     display: none;
-  }
-
-  .select-button img {
-    width: 32px;
-  }
-}
-
-@media (max-width: 600px) {
-  .lang {
-    right: 60px;
-    top: 34px;
-  }
-}
-
-@media (max-width: 500px) {
-  .lang {
-    right: 48px;
-    top: 46px;
-  }
-}
-
-@media (max-width: 450px) {
-  .lang {
-    right: 28px;
-    top: 42px;
-  }
-
-  .select-button img {
-    width: 28px;
   }
 }

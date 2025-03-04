@@ -728,7 +728,7 @@ export default function initPlugin() {
             scroll(t) {
               this.isSceneReady &&
                 (this.background.scroll(t),
-                this.character.scroll(0.1 + 0.85 * t)); //posição do bg height
+                this.character.scroll(0.2 + 0.7 * t)); //posição do bg height
             } //posição do bg
             update(t) {
               this.isSceneReady &&
