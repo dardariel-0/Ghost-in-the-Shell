@@ -26,3 +26,10 @@
     padding: 40px 4px 20px 0;
   }
 }
+
+@media (max-width: 450px) {
+  .siteHeader .logo {
+    max-width: 200px;
+    padding: 40px 4px 20px 0;
+  }
+}

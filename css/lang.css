@@ -186,3 +186,14 @@
     top: 46px;
   }
 }
+
+@media (max-width: 450px) {
+  .lang {
+    right: 28px;
+    top: 42px;
+  }
+
+  .select-button img {
+    width: 28px;
+  }
+}
